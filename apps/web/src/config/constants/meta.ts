@@ -9,7 +9,7 @@ import { PageMeta } from './types'
 //   image: 'https://dapp-frontend-prince.web.app/images/hero.png',
 // }
 export const DEFAULT_META: PageMeta = {
-  title: 'MoroDEX',
+  title: 'BUTANEX',
   description:
     '',
   image: '',
@@ -51,7 +51,7 @@ const getPathList = (t: ContextApi['t']): PathList => {
       '/pancake-squad': { basePath: true, title: t('Pancake Squad') },
       '/pottery': { basePath: true, title: t('Pottery') },
     },
-    defaultTitleSuffix: t('MoroDEX'),
+    defaultTitleSuffix: t('BUTANEX'),
   }
 }
 
