@@ -7,13 +7,13 @@ import { calculateSlippageAmount, basisPointsToPercent } from 'utils/exchange'
 describe('utils', () => {
   describe('#getBscScanLink', () => {
     it('correct for tx', () => {
-      expect(getBlockExploreLink('abc', 'transaction', ChainId.BSC)).toEqual('https://bscscan.com/tx/abc')
+      expect(getBlockExploreLink('abc', 'transaction', ChainId.BSC)).toEqual('https://butane.evm.scan.cryptosnowprince.com/tx/abc')
     })
     it('correct for token', () => {
-      expect(getBlockExploreLink('abc', 'token', ChainId.BSC)).toEqual('https://bscscan.com/token/abc')
+      expect(getBlockExploreLink('abc', 'token', ChainId.BSC)).toEqual('https://butane.evm.scan.cryptosnowprince.com/token/abc')
     })
     it('correct for address', () => {
-      expect(getBlockExploreLink('abc', 'address', ChainId.BSC)).toEqual('https://bscscan.com/address/abc')
+      expect(getBlockExploreLink('abc', 'address', ChainId.BSC)).toEqual('https://butane.evm.scan.cryptosnowprince.com/address/abc')
     })
     it('enum', () => {
       expect(getBlockExploreLink('abc', 'address', ChainId.BSC_TESTNET)).toEqual(

@@ -49,7 +49,7 @@ export const multiChainQueryEndPoint = {
 }
 
 export const multiChainScan = {
-  BSC: 'BscScan',
+  BSC: 'ButaneScan',
   ETH: 'EtherScan',
 }
 

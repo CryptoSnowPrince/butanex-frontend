@@ -70,7 +70,7 @@ const emissionsPerBlock = 9.9
  * These stuck tokens are forever gone (see their medium post) and can be considered out of circulation."
  * https://planetfinanceio.medium.com/pancakeswap-works-with-planet-to-help-cake-holders-f0d253b435af
  * https://twitter.com/PancakeSwap/status/1523913527626702849
- * https://bscscan.com/tx/0xd5ffea4d9925d2f79249a4ce05efd4459ed179152ea5072a2df73cd4b9e88ba7
+ * https://butane.evm.scan.cryptosnowprince.com/tx/0xd5ffea4d9925d2f79249a4ce05efd4459ed179152ea5072a2df73cd4b9e88ba7
  */
 const planetFinanceBurnedTokensWei = BigNumber.from('637407922445268000000000')
 const cakeVaultAddress = getCakeVaultAddress()

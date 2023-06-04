@@ -68,7 +68,7 @@ const ProfileNftModal: React.FC<React.PropsWithChildren<ProfileNftModalProps>> =
               height="16px"
               href={getBscScanLinkForNft(nft.collectionAddress, nft.tokenId)}
             >
-              BscScan
+              ButaneScan
             </LinkExternal>
           </Flex>
         </Flex>

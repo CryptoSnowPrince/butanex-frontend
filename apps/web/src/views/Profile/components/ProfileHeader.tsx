@@ -110,7 +110,7 @@ const ProfileHeader: React.FC<React.PropsWithChildren<HeaderProps>> = ({
               }}
               href={getBlockExploreLink(accountPath, 'address') || ''}
               // @ts-ignore
-              alt={t('View BscScan for user address')}
+              alt={t('View ButaneScan for user address')}
             >
               <BscScanIcon width="20px" color="primary" />
             </IconButton>

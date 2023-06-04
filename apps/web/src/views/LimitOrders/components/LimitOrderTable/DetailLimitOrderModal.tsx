@@ -143,7 +143,7 @@ export const DetailLimitOrderModal: React.FC<React.PropsWithChildren<DetailLimit
         {isOpen || isExpired ? (
           <>
             <Button variant="primary" mt="16px" as="a" external href={formattedOrder.bscScanUrls.created}>
-              {t('View on BscScan')}
+              {t('View on ButaneScan')}
               <BscScanIcon color="primary" ml="4px" />
             </Button>
             {!isSubmissionPending && (
