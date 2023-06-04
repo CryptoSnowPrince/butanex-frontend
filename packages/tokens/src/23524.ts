@@ -1,26 +1,18 @@
 import { ChainId, WBNB, ERC20Token } from '@pancakeswap/sdk'
 
-export const bscTokens = {
-  wbnb: WBNB[ChainId.BSC],
+export const bbcTokens = {
+  wbbc: WBNB[ChainId.BBC],
   // bnb here points to the wbnb contract. Wherever the currency BNB is required, conditional checks for the symbol 'BNB' can be used
-  bnb: new ERC20Token(
-    ChainId.BSC,
+  bbc: new ERC20Token(
+    ChainId.BBC,
     '0x38AcAA98Db174cEE218A33635322C19cC1155d20',
     18,
     'BBC',
     'BBC',
     'https://butanex.cryptosnowprince.com/',
   ),
-  cake: new ERC20Token(
-    ChainId.BSC,
-    '0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3',
-    18,
-    'BEX',
-    'BUTANEX',
-    'https://butanex.cryptosnowprince.com/',
-  ),
   bex: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3',
     18,
     'BEX',
@@ -28,7 +20,7 @@ export const bscTokens = {
     'https://butanex.cryptosnowprince.com/',
   ),
   ame: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0x26841a0A5D958B128209F4ea9a1DD7E61558c330',
     18,
     'AME',
@@ -36,7 +28,7 @@ export const bscTokens = {
     'https://butanex.cryptosnowprince.com/',
   ),
   fbx: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0x5AB469c5700b2D78bE03905E5169efB5B7AD0035',
     18,
     'FBX',
@@ -44,7 +36,7 @@ export const bscTokens = {
     'https://butanex.cryptosnowprince.com/',
   ),
   flp: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0xa981D95e32d0C7F5ab975b208F3Ea7C21efF09B7',
     18,
     'FLP',
@@ -52,7 +44,7 @@ export const bscTokens = {
     'https://butanex.cryptosnowprince.com/',
   ),
   gusd: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0x92764be298C0549389bb0b274E4563C4c6f4311c',
     18,
     'GUSD',
@@ -60,7 +52,7 @@ export const bscTokens = {
     'https://butanex.cryptosnowprince.com/',
   ),
   veGAS: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0xAbDD6d8de7E71768295c7019658c36De552128D4',
     18,
     'veGAS',
@@ -68,7 +60,7 @@ export const bscTokens = {
     'https://butanex.cryptosnowprince.com/',
   ),
   gas: new ERC20Token(
-    ChainId.BSC,
+    ChainId.BBC,
     '0x135Eeb2ED1B006d900F091250Bd85907B652B18f',
     18,
     'GAS',

@@ -1,5 +1,5 @@
 {
-  "name": "PancakeSwap Default List",
+  "name": "Butanex Default List",
   "timestamp": "2022-01-26T11:45:09Z",
   "version": {
     "major": 4,
@@ -51,12 +51,12 @@
       "logoURI": "https://tokens.dapp-frontend-prince.web.app/images/symbol/usdt.png"
     },
     {
-      "name": "MORODEX",
-      "symbol": "MDEX",
+      "name": "BUTANEX",
+      "symbol": "BEX",
       "address": "0x43018838ABca94148Fb67A9F61f8b06fAb8F76C9",
       "chainId": 56,
       "decimals": 18,
-      "logoURI": "/images/tokens/0x43018838ABca94148Fb67A9F61f8b06fAb8F76C9.png"
+      "logoURI": "/images/tokens/0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3.png"
     },
     {
       "name": "Venus",
@@ -115,12 +115,12 @@
       "logoURI": "/images/tokens/0xA7f552078dcC247C2684336020c03648500C6d9F.png"
     },
     {
-      "name": "MORODEX",
-      "symbol": "MDEX",
-      "address": "0x70360225dF3dC665c547b25Fc92916f7fAc642AD",
-      "chainId": 97,
+      "name": "BUTANEX",
+      "symbol": "BEX",
+      "address": "0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3",
+      "chainId": 23524,
       "decimals": 18,
-      "logoURI": "/images/tokens/0x43018838ABca94148Fb67A9F61f8b06fAb8F76C9.png"
+      "logoURI": "/images/tokens/0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3.png"
     },
     {
       "name": "BUSD Token",

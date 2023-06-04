@@ -50,7 +50,7 @@ describe('Pair', () => {
         "isToken": true,
         "name": "Pancake-BTC-SOL-LP",
         "projectLink": undefined,
-        "symbol": "MDEX-LP",
+        "symbol": "BEX-LP",
       }
     `)
   })

@@ -10,7 +10,7 @@ describe('getFarmPrices tests', () => {
           chainId: 56,
           address: '0x43018838ABca94148Fb67A9F61f8b06fAb8F76C9',
           symbol: 'Cake',
-          name: 'MORODEX',
+          name: 'Cake',
           decimals: 18,
         },
         quoteToken: {

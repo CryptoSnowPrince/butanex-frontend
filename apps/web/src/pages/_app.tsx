@@ -72,12 +72,12 @@ function MyApp(props: AppProps<{ initialReduxState: any }>) {
           content="BUTANEX"
         />
         <meta name="theme-color" content="#1FC7D4" />
-        <meta name="twitter:image" content="https://morodex.org/images/check-your-network.png" />
+        <meta name="twitter:image" content="https://butanex.cryptosnowprince.com/images/check-your-network.png" />
         <meta
           name="twitter:description"
           content="BUTANEX"
         />
-        <meta name="twitter:card" content="https://morodex.org/images/check-your-network.png" />
+        <meta name="twitter:card" content="https://butanex.cryptosnowprince.com/images/check-your-network.png" />
         <meta name="twitter:title" content="BUTANEX" />
         <meta name="twitter:image" content="" />
         <meta

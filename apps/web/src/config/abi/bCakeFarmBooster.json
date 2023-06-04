@@ -151,7 +151,7 @@
   },
   {
     "inputs": [],
-    "name": "MDEX",
+    "name": "BEX",
     "outputs": [{ "internalType": "address", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"

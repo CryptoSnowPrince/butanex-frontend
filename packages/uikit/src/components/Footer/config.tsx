@@ -28,7 +28,7 @@ export const footerLinks: FooterLinkType[] = [
         href: "https://docs.dapp-frontend-prince.web.app/contact-us/telegram",
       },
       {
-        label: "MDEX",
+        label: "BEX",
         href: "https://docs.dapp-frontend-prince.web.app/tokenomics/cake",
       },
       {

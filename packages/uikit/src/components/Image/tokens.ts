@@ -3,10 +3,11 @@
  */
 const tokens = {
   cake: {
-    symbol: "MDEX",
+    symbol: "BEX",
     address: {
       56: "0x43018838ABca94148Fb67A9F61f8b06fAb8F76C9",
       97: "0x70360225dF3dC665c547b25Fc92916f7fAc642AD",
+      23524: "0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3",
     },
     decimals: 18,
     projectLink: "https://dapp-frontend-prince.web.app/",

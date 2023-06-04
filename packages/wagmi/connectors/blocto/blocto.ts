@@ -21,6 +21,7 @@ const chainIdToNetwork: { [network: number]: string } = {
   4: 'rinkeby',
   42: 'kovan',
   56: 'bsc', // BSC Mainnet
+  23524: 'bbc', // BBC Butane Testnet
   97: 'chapel', // BSC Testnet
   137: 'polygon', // Polygon Mainnet
   80001: 'mumbai', // Polygon Testnet

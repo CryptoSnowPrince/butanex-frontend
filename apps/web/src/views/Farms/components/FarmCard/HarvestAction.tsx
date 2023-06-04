@@ -79,7 +79,7 @@ const HarvestAction: React.FC<React.PropsWithChildren<FarmCardActionsProps>> = (
       toastSuccess(
         `${t('Harvested')}!`,
         <ToastDescriptionWithTx txHash={receipt.transactionHash}>
-          {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'MDEX' })}
+          {t('Your %symbol% earnings have been sent to your wallet!', { symbol: 'BEX' })}
         </ToastDescriptionWithTx>,
       )
       onDone?.()

@@ -1,12 +1,13 @@
 import { ChainId, JSBI, Percent, Token, WNATIVE } from '@pancakeswap/sdk'
 import { BigNumber } from '@ethersproject/bignumber'
-import { bscTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH } from '@pancakeswap/tokens'
+import { bscTokens, bbcTokens, bscTestnetTokens, USDC, USDT, BUSD, WBTC_ETH } from '@pancakeswap/tokens'
 import { ChainMap, ChainTokenList } from './types'
 
 export const ROUTER_ADDRESS: ChainMap<string> = {
   [ChainId.ETHEREUM]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
   [ChainId.GOERLI]: '0xEfF92A263d31888d860bD50809A8D171709b7b1c',
-  [ChainId.BSC]: '0x27aa0d60CCD8b736593686a1b9dbE0273823E4A2',
+  [ChainId.BSC]: '0xEe8d287B844959ADe40d718Dc23077ba920e2f07',
+  [ChainId.BBC]: '0xEe8d287B844959ADe40d718Dc23077ba920e2f07',
   [ChainId.BSC_TESTNET]: '0x6583bEE82975A1a7d1a13CDD777238401f8E1A0A',
 }
 
@@ -16,12 +17,23 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
   [ChainId.GOERLI]: [WNATIVE[ChainId.GOERLI], USDC[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
   [ChainId.BSC]: [
     bscTokens.wbnb,
-    bscTokens.cake,
-    bscTokens.busd,
-    bscTokens.usdt,
-    bscTokens.btcb,
-    bscTokens.eth,
-    bscTokens.usdc,
+    bscTokens.bex,
+    bscTokens.ame,
+    bscTokens.fbx,
+    bscTokens.flp,
+    bscTokens.gusd,
+    bscTokens.veGAS,
+    bscTokens.gas,
+  ],
+  [ChainId.BBC]: [
+    bbcTokens.wbbc,
+    bbcTokens.bex,
+    bbcTokens.ame,
+    bbcTokens.fbx,
+    bbcTokens.flp,
+    bbcTokens.gusd,
+    bbcTokens.veGAS,
+    bbcTokens.gas,
   ],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
@@ -33,7 +45,7 @@ export const BASES_TO_CHECK_TRADES_AGAINST: ChainTokenList = {
 export const ADDITIONAL_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: Token[] } } = {
   [ChainId.BSC]: {
     // SNFTS-SFUND
-    [bscTokens.snfts.address]: [bscTokens.sfund],
+    // [bscTokens.snfts.address]: [bscTokens.sfund],
   },
 }
 
@@ -50,7 +62,8 @@ export const CUSTOM_BASES: { [chainId in ChainId]?: { [tokenAddress: string]: To
 export const SUGGESTED_BASES: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], WBTC_ETH],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
-  [ChainId.BSC]: [bscTokens.busd, bscTokens.cake, bscTokens.btcb],
+  [ChainId.BSC]: [bscTokens.bex, bscTokens.wbnb, bscTokens.gusd],
+  [ChainId.BBC]: [bbcTokens.bex, bbcTokens.wbbc, bbcTokens.gusd],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
@@ -58,7 +71,8 @@ export const SUGGESTED_BASES: ChainTokenList = {
 export const BASES_TO_TRACK_LIQUIDITY_FOR: ChainTokenList = {
   [ChainId.ETHEREUM]: [USDC[ChainId.ETHEREUM], WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM], WBTC_ETH],
   [ChainId.GOERLI]: [USDC[ChainId.GOERLI], WNATIVE[ChainId.GOERLI], BUSD[ChainId.GOERLI]],
-  [ChainId.BSC]: [bscTokens.wbnb, bscTokens.dai, bscTokens.busd, bscTokens.usdt, bscTokens.cake],
+  [ChainId.BBC]: [bbcTokens.bex, bbcTokens.wbbc, bbcTokens.gusd],
+  [ChainId.BSC]: [bscTokens.bex, bscTokens.wbnb, bscTokens.gusd],
   [ChainId.BSC_TESTNET]: [bscTestnetTokens.wbnb, bscTestnetTokens.cake, bscTestnetTokens.busd],
 }
 
@@ -69,9 +83,14 @@ export const PINNED_PAIRS: { readonly [chainId in ChainId]?: [Token, Token][] } 
     [WNATIVE[ChainId.ETHEREUM], USDT[ChainId.ETHEREUM]],
   ],
   [ChainId.BSC]: [
-    [bscTokens.cake, bscTokens.wbnb],
-    [bscTokens.busd, bscTokens.usdt],
-    [bscTokens.dai, bscTokens.usdt],
+    [bscTokens.bex, bscTokens.wbnb],
+    [bscTokens.bex, bscTokens.gusd],
+    [bscTokens.wbnb, bscTokens.gusd],
+  ],
+  [ChainId.BBC]: [
+    [bbcTokens.bex, bbcTokens.wbbc],
+    [bbcTokens.bex, bbcTokens.gusd],
+    [bbcTokens.wbbc, bbcTokens.gusd],
   ],
 }
 

@@ -2,10 +2,19 @@ import { ChainId, ERC20Token } from '@pancakeswap/sdk'
 
 export const CAKE_MAINNET = new ERC20Token(
   ChainId.BSC,
-  '0x43018838ABca94148Fb67A9F61f8b06fAb8F76C9',
+  '0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3',
   18,
-  'MDEX',
-  'MORODEX',
+  'BEX',
+  'BUTANEX',
+  'https://dapp-frontend-prince.web.app/',
+)
+
+export const CAKE_BBC_MAINNET = new ERC20Token(
+  ChainId.BBC,
+  '0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3',
+  18,
+  'BEX',
+  'BUTANEX',
   'https://dapp-frontend-prince.web.app/',
 )
 
@@ -13,18 +22,27 @@ export const CAKE_TESTNET = new ERC20Token(
   ChainId.BSC_TESTNET,
   '0x70360225dF3dC665c547b25Fc92916f7fAc642AD',
   18,
-  'MDEX',
-  'MORODEX',
+  'BEX',
+  'BUTANEX',
   'https://dapp-frontend-prince.web.app/',
 )
 
 export const USDC_BSC = new ERC20Token(
   ChainId.BSC,
-  '0x8AC76a51cc950d9822D68b83fE1Ad97B32Cd580d',
+  '0x92764be298C0549389bb0b274E4563C4c6f4311c',
   18,
-  'USDC',
-  'Binance-Peg USD Coin',
-  'https://www.centre.io/usdc',
+  'GUSD',
+  'GUSD',
+  'https://butanex.cryptosnowprince.com',
+)
+
+export const USDC_BBC_BSC = new ERC20Token(
+  ChainId.BBC,
+  '0x92764be298C0549389bb0b274E4563C4c6f4311c',
+  18,
+  'GUSD',
+  'GUSD',
+  'https://butanex.cryptosnowprince.com',
 )
 
 export const USDC_TESTNET = new ERC20Token(
@@ -70,13 +88,31 @@ export const USDT_ETH = new ERC20Token(
   'https://tether.to/',
 )
 
+// export const BUSD_BSC = new ERC20Token(
+//   ChainId.BSC,
+//   '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+//   18,
+//   'BUSD',
+//   'Binance USD',
+//   'https://www.paxos.com/busd/',
+// )
+
 export const BUSD_BSC = new ERC20Token(
   ChainId.BSC,
-  '0xe9e7CEA3DedcA5984780Bafc599bD69ADd087D56',
+  '0x92764be298C0549389bb0b274E4563C4c6f4311c',
   18,
-  'BUSD',
-  'Binance USD',
-  'https://www.paxos.com/busd/',
+  'GUSD',
+  'GUSD',
+  'https://butanex.cryptosnowprince.com',
+)
+
+export const BUSD_BBC_BSC = new ERC20Token(
+  ChainId.BBC,
+  '0x92764be298C0549389bb0b274E4563C4c6f4311c',
+  18,
+  'GUSD',
+  'GUSD',
+  'https://butanex.cryptosnowprince.com',
 )
 
 export const BUSD_TESTNET = new ERC20Token(
@@ -110,16 +146,19 @@ export const BUSD: Record<ChainId, ERC20Token> = {
   [ChainId.ETHEREUM]: BUSD_ETH,
   [ChainId.GOERLI]: BUSD_GOERLI,
   [ChainId.BSC]: BUSD_BSC,
+  [ChainId.BBC]: BUSD_BBC_BSC,
   [ChainId.BSC_TESTNET]: BUSD_TESTNET,
 }
 
 export const CAKE = {
   [ChainId.BSC]: CAKE_MAINNET,
+  [ChainId.BBC]: CAKE_BBC_MAINNET,
   [ChainId.BSC_TESTNET]: CAKE_TESTNET,
 }
 
 export const USDC = {
   [ChainId.BSC]: USDC_BSC,
+  [ChainId.BBC]: USDC_BBC_BSC,
   [ChainId.BSC_TESTNET]: USDC_TESTNET,
   [ChainId.ETHEREUM]: USDC_ETH,
   [ChainId.GOERLI]: USDC_GOERLI,

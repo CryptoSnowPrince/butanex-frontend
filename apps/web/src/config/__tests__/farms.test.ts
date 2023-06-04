@@ -55,7 +55,7 @@ describe('Config farms', () => {
   // The first pid using the new factory
   // BSC
   const START_PID = 2
-  const FACTORY_ADDRESS = '0xde00bDedf6260954728B9489521A44cE95aE311C'
+  const FACTORY_ADDRESS = '0x5e1100ea18F918a4e9AB70694c6c554e1E940D32'
   const newFarmsToTest = farmsToTest.filter((farmSet) => farmSet[0] >= START_PID)
 
   it.each(newFarmsToTest)('farm %d is using correct factory address', async (pid, farm) => {
@@ -66,7 +66,7 @@ describe('Config farms', () => {
 
   // ETH
   const ETH_START_PID = 124
-  const ETH_FACTORY_ADDRESS = '0x1097053fd2ea711dad45caccc45eff7548fcb362'
+  const ETH_FACTORY_ADDRESS = '0x1097053Fd2ea711dad45caCcc45EfF7548fCB362'
   const ethNewFarmsToTest = farms1ToTest.filter((farmSet) => farmSet[0] >= ETH_START_PID)
 
   it.each(ethNewFarmsToTest)('farm %d is using correct factory address', async (pid, farm) => {

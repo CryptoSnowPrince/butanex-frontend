@@ -17,7 +17,7 @@ export function PoolCard<T>({ pool, cardContent, aprRow, isStaked, cardFooter, t
   const { sousId, stakingToken, earningToken, isFinished, totalStaked } = pool;
   const { t } = useTranslation();
 
-  const isCakePool = earningToken?.symbol === "MDEX" && stakingToken?.symbol === "MDEX";
+  const isCakePool = earningToken?.symbol === "BEX" && stakingToken?.symbol === "BEX";
 
   return (
     <StyledCard

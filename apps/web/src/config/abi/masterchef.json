@@ -141,7 +141,7 @@
   },
   {
     "inputs": [],
-    "name": "MDEX",
+    "name": "BEX",
     "outputs": [{ "internalType": "contract IBEP20", "name": "", "type": "address" }],
     "stateMutability": "view",
     "type": "function"
