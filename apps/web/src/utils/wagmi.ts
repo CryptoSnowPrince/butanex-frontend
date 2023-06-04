@@ -2,7 +2,7 @@ import { BinanceWalletConnector } from '@pancakeswap/wagmi/connectors/binanceWal
 import { BloctoConnector } from '@pancakeswap/wagmi/connectors/blocto'
 import { TrustWalletConnector } from '@pancakeswap/wagmi/connectors/trustWallet'
 import { bsc, bscTestnet, goerli, mainnet } from 'wagmi/chains'
-import { configureChains, createClient } from 'wagmi'
+import { configureChains, createClient, Chain } from 'wagmi'
 import memoize from 'lodash/memoize'
 import { CoinbaseWalletConnector } from 'wagmi/connectors/coinbaseWallet'
 import { InjectedConnector } from 'wagmi/connectors/injected'
@@ -12,7 +12,32 @@ import { LedgerConnector } from 'wagmi/connectors/ledger'
 import { jsonRpcProvider } from 'wagmi/providers/jsonRpc'
 import { SafeConnector } from './safeConnector'
 
-const CHAINS = [bsc, mainnet, bscTestnet, goerli]
+export const bbcTestnet = {
+  id: 23524,
+  name: 'BBC Butane Testnet',
+  network: 'bbc',
+  nativeCurrency: {
+    decimals: 18,
+    name: 'BBC',
+    symbol: 'BBC',
+  },
+  rpcUrls: {
+    default: { http: ['https://butane.evm.jrpc.main.cryptosnowprince.com'] },
+    public: { http: ['https://butane.evm.jrpc.main.cryptosnowprince.com'] },
+  },
+  blockExplorers: {
+    etherscan: { name: 'ButaneScan', url: 'https://butane.evm.scan.cryptosnowprince.com' },
+    default: { name: 'ButaneScan', url: 'https://butane.evm.scan.cryptosnowprince.com' },
+  },
+  contracts: {
+    multicall3: {
+      address: '0x3a8ea327ab5440701ebad94b566c790c8f96151f',
+    },
+  },
+  // testnet: true
+} as Chain
+
+const CHAINS = [bbcTestnet]
 
 const getNodeRealUrl = (networkName: string) => {
   let host = null
@@ -46,7 +71,7 @@ const getNodeRealUrl = (networkName: string) => {
 export const { provider, chains } = configureChains(CHAINS, [
   jsonRpcProvider({
     rpc: (chain) => {
-      if (!!process.env.NEXT_PUBLIC_NODE_PRODUCTION && chain.id === bsc.id) {
+      if (!!process.env.NEXT_PUBLIC_NODE_PRODUCTION && chain.id === bbcTestnet.id) {
         return { http: process.env.NEXT_PUBLIC_NODE_PRODUCTION }
       }
       if (process.env.NODE_ENV === 'test' && chain.id === mainnet.id) {

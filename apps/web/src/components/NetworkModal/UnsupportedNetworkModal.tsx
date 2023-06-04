@@ -17,7 +17,8 @@ export function UnsupportedNetworkModal({ pageSupportedChains }: { pageSupported
   const { switchNetworkAsync, isLoading, canSwitch } = useSwitchNetwork()
   const switchNetworkLocal = useSwitchNetworkLocal()
   const { chains } = useNetwork()
-  const chainId = useLocalNetworkChain() || ChainId.BSC
+  const chainId = useLocalNetworkChain() || ChainId.BBC
+  console.log('[PRINCE]: chains', chains)
   const { isConnected } = useAccount()
   const { logout } = useAuth()
   const { t } = useTranslation()
