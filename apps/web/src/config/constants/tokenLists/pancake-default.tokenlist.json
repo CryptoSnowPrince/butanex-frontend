@@ -123,6 +123,62 @@
       "logoURI": "/images/tokens/0xF79f289F3d5Ab752D57666B96Cb3BD57b0E3C6F3.png"
     },
     {
+      "name": "Wrapped BBC",
+      "symbol": "WBBC",
+      "address": "0x38AcAA98Db174cEE218A33635322C19cC1155d20",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0x38AcAA98Db174cEE218A33635322C19cC1155d20.png"
+    },
+    {
+      "name": "FLAMEZ",
+      "symbol": "AME",
+      "address": "0x26841a0A5D958B128209F4ea9a1DD7E61558c330",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0x26841a0A5D958B128209F4ea9a1DD7E61558c330.png"
+    },
+    {
+      "name": "FBX",
+      "symbol": "FBX",
+      "address": "0x5AB469c5700b2D78bE03905E5169efB5B7AD0035",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0x5AB469c5700b2D78bE03905E5169efB5B7AD0035.png"
+    },
+    {
+      "name": "FLP",
+      "symbol": "FLP",
+      "address": "0xa981D95e32d0C7F5ab975b208F3Ea7C21efF09B7",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0xa981D95e32d0C7F5ab975b208F3Ea7C21efF09B7.png"
+    },
+    {
+      "name": "GUSD",
+      "symbol": "GUSD",
+      "address": "0x92764be298C0549389bb0b274E4563C4c6f4311c",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0x92764be298C0549389bb0b274E4563C4c6f4311c.png"
+    },
+    {
+      "name": "ButaneDao",
+      "symbol": "veGAS",
+      "address": "0xAbDD6d8de7E71768295c7019658c36De552128D4",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0xAbDD6d8de7E71768295c7019658c36De552128D4.png"
+    },
+    {
+      "name": "GAS",
+      "symbol": "GAS",
+      "address": "0x135Eeb2ED1B006d900F091250Bd85907B652B18f",
+      "chainId": 23524,
+      "decimals": 18,
+      "logoURI": "/images/tokens/0x135Eeb2ED1B006d900F091250Bd85907B652B18f.png"
+    },
+    {
       "name": "BUSD Token",
       "symbol": "BUSD",
       "address": "0xaB1a4d4f1D656d2450692D237fdD6C7f9146e814",

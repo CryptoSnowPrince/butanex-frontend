@@ -111,7 +111,7 @@ export const NATIVE: Record<
     symbol: 'BBC',
     decimals: 18,
   },
-  [ChainId.BSC]: {
+  [ChainId.BBC]: {
     name: 'Butane Chain Native Token',
     symbol: 'BBC',
     decimals: 18,
