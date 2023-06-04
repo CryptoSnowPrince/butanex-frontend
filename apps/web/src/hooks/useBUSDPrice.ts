@@ -128,12 +128,12 @@ export const usePriceByPairs = (currencyA?: Currency, currencyB?: Currency) => {
       if (!reserves) {
         return null
       }
-      const { reserve0, reserve1 } = reserves
+      const { reserve0_, reserve1_ } = reserves
       const [token0, token1] = tokenA.sortsBefore(tokenB) ? [tokenA, tokenB] : [tokenB, tokenA]
 
       const pair = new Pair(
-        CurrencyAmount.fromRawAmount(token0, reserve0.toString()),
-        CurrencyAmount.fromRawAmount(token1, reserve1.toString()),
+        CurrencyAmount.fromRawAmount(token0, reserve0_.toString()),
+        CurrencyAmount.fromRawAmount(token1, reserve1_.toString()),
       )
 
       return pair.priceOf(tokenB)
