@@ -62,7 +62,7 @@ const FarmResult: React.FC<React.PropsWithChildren<FarmInfoProps>> = ({ pickedDa
 
   const { targetRef, tooltip, tooltipVisible } = useTooltip(
     <Flex flexDirection="column">
-      <ListStyle>{t('You have received 0.0005 BNB as a first-time BNB Smart Chain user')}</ListStyle>
+      <ListStyle>{t('You have received 0.0005 BNB as a first-time BBC Butane Testnet user')}</ListStyle>
       <ListStyle>
         {t('You can swap more BNB on')}
         <LinkStyle href="/swap">{t('Swap.')}</LinkStyle>

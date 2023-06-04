@@ -122,7 +122,7 @@ const MultiChainHarvestModal: React.FC<MultiChainHarvestModalProp> = ({
                   <ChainLogo chainId={chainId} /> <ArrowForwardIcon color="#D67E0A" />
                   <ChainLogo chainId={ChainId.BSC} />
                 </FlexGap>
-                <span>{t('Harvest on BNB Smart Chain')}</span>
+                <span>{t('Harvest on BBC Butane Testnet')}</span>
               </FlexGap>
             </MessageText>
           </Message>
@@ -161,7 +161,7 @@ const MultiChainHarvestModal: React.FC<MultiChainHarvestModalProp> = ({
               </Button>
             ) : (
               <Button width="100%" variant="secondary" onClick={handleSwitchNetwork}>
-                {t('Switch to BNB Smart Chain')}
+                {t('Switch to BBC Butane Testnet')}
               </Button>
             )}
           </Box>
